@@ -1,0 +1,23 @@
+@import "../utils/variables.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+svg {
+  vertical-align: middle;
+}

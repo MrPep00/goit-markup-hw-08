@@ -1,0 +1,83 @@
+@import "../utils/variables.scss";
+
+.button {
+  cursor: pointer;
+  background-color: $button-color;
+  color: $button-text-color;
+  border: none;
+  border-radius: 4px;
+}
+
+.title__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  padding: 10px 20px;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding: 6px;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+  background: $button-text-color;
+
+  &:hover {
+    fill: $button-color;
+  }
+}
+
+.filters-list__button {
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: $secondary-background;
+  color: $main-text-color;
+  text-transform: capitalize;
+  padding: 6px 26px;
+  transition-property: box-shadow, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $button-color;
+    color: $button-text-color;
+    box-shadow: 0px 2px 2px 0px #0000001f;
+
+    box-shadow: 0px 1px 2px 0px #00000014;
+
+    box-shadow: 0px 3px 1px 0px #0000001a;
+  }
+}
+
+.newsletter-form__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: $button-color;
+  color: $button-text-color;
+
+  box-shadow: 0px 4px 4px 0px #00000026;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
