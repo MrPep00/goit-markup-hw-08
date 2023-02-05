@@ -63,13 +63,29 @@
   justify-content: center;
 
   .benefits-list__item {
-    width: 270px;
+    max-width: 450px;
+
+    @include tablet {
+      max-width: 354px;
+    }
+
+    @include desktop {
+      max-width: 270px;
+    }
 
     .benefits-list__icons {
       background-color: $secondary-background;
-      padding: 25px 100px;
+      padding: 25px 190px;
       margin-bottom: 30px;
       border-radius: 4px;
+
+      @include tablet {
+        padding: 25px 142px;
+      }
+
+      @include desktop {
+        padding: 25px 100px;
+      }
     }
     .benefits-list__item-name {
       font-weight: 700;
@@ -78,6 +94,15 @@
       text-transform: uppercase;
       color: $main-text-color;
       margin-bottom: 10px;
+      text-align: center;
+
+      @include tablet {
+        text-align: start;
+      }
+
+      @include desktop {
+        text-align: start;
+      }
     }
     .benefits-list__item-description {
       color: $secondary-text-color;
@@ -88,9 +113,14 @@
 }
 
 .offers {
+  display: none;
   text-align: center;
   padding-bottom: 86px;
   background: $button-text-color;
+
+  @include desktop {
+    display: flex;
+  }
 }
 .offers__header {
   font-size: 36px;
@@ -130,15 +160,20 @@
 .team {
   background: $secondary-background;
   text-align: center;
-  padding: 102px 0 86px;
+  padding: 60px 0;
 }
 
 .team__header {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
@@ -155,8 +190,20 @@
 
     box-shadow: 0px 2px 1px 0px #00000033;
 
-    .team-list__item-image {
+    &-image {
       display: block;
+      width: 450px;
+      height: 460px;
+
+      @include tablet {
+        width: 354px;
+        height: 374px;
+      }
+
+      @include desktop {
+        width: 270px;
+        height: 260px;
+      }
     }
   }
 }
@@ -212,18 +259,27 @@
 }
 
 .customers {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 94px 0;
+  }
 }
 
 .customers__header {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 
   text-transform: capitalize;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .customers-list {
