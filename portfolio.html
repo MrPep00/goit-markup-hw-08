@@ -59,6 +59,15 @@
               +1 212-772-4150</a
             >
           </div>
+          <button
+            class="header__burger-menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="burger-svg" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -98,8 +107,8 @@
                 <img
                   src="images/technoduck.jpg"
                   alt="Technoduck"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -119,8 +128,8 @@
                 <img
                   src="images/poster.jpg"
                   alt="Poster-New-Orlean-vs-Golden-Star"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -143,8 +152,8 @@
                 <img
                   src="images/seafod.jpg"
                   alt="Seafood-Restaurant "
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -164,8 +173,8 @@
                 <img
                   src="images/project-prime.jpg"
                   alt="Project-Prime"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -185,8 +194,8 @@
                 <img
                   src="images/project-boxes.jpg"
                   alt="Project-Boxes"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -206,8 +215,8 @@
                 <img
                   src="images/inspiration-has-no-borders.jpg"
                   alt="Inspiration-has-no-Borders"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -230,8 +239,8 @@
                 <img
                   src="images/limited-edition.jpg"
                   alt="Limited-Edition"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -251,8 +260,8 @@
                 <img
                   src="images/project-lab.jpg"
                   alt="Project-LAB"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -274,8 +283,8 @@
                 <img
                   src="images/growing-business.jpg"
                   alt="Growing-Business"
-                  width="370"
                   height="294"
+                  class="project-list__item-image"
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__description">
@@ -294,6 +303,61 @@
         </div>
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-container__close js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images/icons.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a href="index.html" class="mobile-menu__link">Studio</a>
+        </li>
+        <li>
+          <a
+            href="portfolio.html"
+            class="mobile-menu__link mobile-menu__link--is-active"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="" class="mobile-menu__link">Contact</a></li>
+      </ul>
+      <div class="menu-box">
+        <div class="menu-box__contact">
+          <a class="menu-box__contact-tel" href="tel:+12127724150"
+            >+1 212-772-4150</a
+          >
+          <a class="menu-box__contact-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
+        <ul class="menu-box__social">
+          <li class="menu-box__social-item">
+            <a class="menu-box__social-link" href="#instagram.html"
+              >Instagram</a
+            >
+          </li>
+          <li class="menu-box__social-item">
+            <a class="menu-box__social-link" href="#twitter.html">Twitter</a>
+          </li>
+          <li class="menu-box__social-item">
+            <a class="menu-box__social-link" href="#facebook.html">Facebook</a>
+          </li>
+          <li class="menu-box__social-item">
+            <a class="menu-box__social-link" href="#linkedin.html">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <footer class="footer">
       <div class="footer__box container">
         <div class="footer-address">
