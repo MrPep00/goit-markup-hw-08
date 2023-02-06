@@ -1,8 +1,16 @@
 .header {
   line-height: 1.17;
   border-bottom: 1px solid $header-border;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0;
+
+  @include tablet {
+    padding: 26px 0;
+  }
+
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .main-box {
   display: flex;
@@ -11,11 +19,24 @@
   .nav-box {
     display: flex;
     justify-content: space-between;
-    gap: 93px;
+
     align-items: center;
+
+    @include tablet {
+      gap: 88px;
+    }
+
+    @include desktop {
+      gap: 93px;
+    }
   }
 }
 .main-nav {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
   .nav-links {
     flex-wrap: wrap;
   }
@@ -55,11 +76,29 @@
     height: 4px;
     background-color: $button-color;
     border-radius: 2px;
-    top: 43.5px;
+
+    @include tablet {
+      top: 52.5px;
+    }
+
+    @include desktop {
+      top: 45.5px;
+    }
   }
 }
 
 .contact-links {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  @include desktop {
+    display: block;
+  }
   .contact-links__mail {
     text-decoration: none;
     color: $secondary-text-color;
@@ -85,5 +124,25 @@
   }
   .contact-links__icon {
     margin-right: 10px;
+  }
+}
+.header__burger-menu {
+  margin-right: 8px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.burger-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  :focus {
+    fill: $button-color;
   }
 }
